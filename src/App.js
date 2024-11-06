@@ -11,6 +11,8 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import FAQ from './components/FAQ';
 import ReturnsAndExchanges from './components/ReturnsAndExchanges';
 import ShippingInformation from './components/ShippingInfo';
+import Newsletter from './components/Newsletter';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/returns" element={<ReturnsAndExchanges />} />
         <Route path="/shipping" element={<ShippingInformation />} />
+        <Route path='/newsletter' element={<Newsletter />} />
+        <Route path='/about-us' element={<AboutUs />} />
       </Routes>
       <Footer />
     </Router>

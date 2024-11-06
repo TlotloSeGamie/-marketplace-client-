@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import './Login.css';
 
-const Login = () => {
+const Login = ({ toggleLoginForm }) => { // Accept toggleLoginForm as a prop
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -23,6 +23,7 @@ const Login = () => {
 
         console.log("Email:", email);
         console.log("Password:", password);
+        toggleLoginForm(); // Close the login form on successful login (if needed)
     };
 
     return (
